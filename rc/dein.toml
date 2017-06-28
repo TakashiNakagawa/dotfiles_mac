@@ -1,0 +1,31 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# 依存関係を指定したいとき
+[[plugins]]
+repo    = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+
+# 依存関係を指定したからと言って、自動でインストールはされない（ここは NeoBundle と違う）
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo   = 'vim-scripts/vim-auto-save'
+
+[[plugins]] # カラースキーマ
+repo = 'altercation/vim-colors-solarized'
+hook_add = '''
+  let g:solarized_termcolors=256
+  syntax enable
+  " colorscheme 設定は source 後に行う必要があるので VimEnter で行う。
+  " 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
+  au MyAutoCmd VimEnter * nested colorscheme solarized
+'''
+
+
+[[plugins]] # コメントアウト
+repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = 'Lokaltog/vim-easymotion'
