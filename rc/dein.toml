@@ -23,6 +23,8 @@ hook_add = '''
   au MyAutoCmd VimEnter * nested colorscheme solarized
 '''
 
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]] # コメントアウト
 repo = 'tyru/caw.vim'
