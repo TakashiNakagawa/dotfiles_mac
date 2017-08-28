@@ -31,3 +31,8 @@ repo = 'tyru/caw.vim'
 
 [[plugins]]
 repo = 'Lokaltog/vim-easymotion'
+
+
+# Qfixhowm
+[[plugins]]
+repo = 'fuenor/qfixhowm'
